@@ -7,5 +7,6 @@ git clone https://github.com/xero/figlet-fonts
 mv figlet-fonts/* figlet && rm -rf figlet-fonts
 gedit /etc/bash.bashrc
 echo ""
+echo ""
 figlet -f Bloody Rafael | lolcat
 echo ""

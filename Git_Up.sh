@@ -140,9 +140,11 @@ function 4_atualiza_git() {
         echo -e "\e[1;93m         [\e[0m""\e[1;9m+""\e[1;93m] Qual origin? exp.git@github.com:Ascoid/Doc.git  \e[0m"
         read -p $'\e[1;9m[*] Qual option: \e[0m' origin
         git remote add origin "$origin"
+        git pull origin main
         git push -f origin main
     elif [ $res = "n" ];
     then
+        git pull origin master
         git push -f origin master
     else
         echo -e "\e[1;91m         [\e[0m""\e[1;9m!""\e[1;91m] Erro na resposta!!  \e[0m"
