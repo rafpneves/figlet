@@ -10,3 +10,4 @@ echo ""
 echo ""
 figlet -f Bloody Rafael | lolcat
 echo ""
+echo ""
