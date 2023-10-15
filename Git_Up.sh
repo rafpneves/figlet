@@ -142,10 +142,28 @@ function 4_atualiza_git() {
         git remote add origin "$origin"
         git pull origin main
         git push -f origin main
+        echo ""
+        echo -e "\e[1;93mSe apresenta o erro error: src refspec master does not match any[\e[0m"
+        echo -e "\e[1;93merror: failed to push some refs to 'PASTA REMOTA[\e[0m"
+        echo ""
+        echo -e "\e[1;91m--------------------------------[\e[0m"
+        echo -e "\e[1;91m   git pull origin main[\e[0m"
+        echo -e "\e[1;91m   git push -f origin main[\e[0m"
+        echo -e "\e[1;91m--------------------------------[\e[0m"
+        echo ""
     elif [ $res = "n" ];
     then
         git pull origin master
         git push -f origin master
+                echo ""
+        echo -e "\e[1;93mSe apresenta o erro error: src refspec master does not match any[\e[0m"
+        echo -e "\e[1;93merror: failed to push some refs to 'PASTA REMOTA[\e[0m"
+        echo ""
+        echo -e "\e[1;91m--------------------------------[\e[0m"
+        echo -e "\e[1;91m   git pull origin main[\e[0m"
+        echo -e "\e[1;91m   git push -f origin main[\e[0m"
+        echo -e "\e[1;91m--------------------------------[\e[0m"
+        echo ""
     else
         echo -e "\e[1;91m         [\e[0m""\e[1;9m!""\e[1;91m] Erro na resposta!!  \e[0m"
     fi
